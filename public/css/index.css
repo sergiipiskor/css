@@ -41,7 +41,7 @@ section .box div {
 
 /* Завдання 8. Зробіть червоний фон для дочірніх елементів тега ul */
 /* Використовуйте селектор для позначення дочірних елементів ( parent_tag > children_tag ) */
-.child-element li {
+ul > li {
     background: red;
 }
 
@@ -81,7 +81,7 @@ button + span {
 /* Завдання №3:   Змінити фон першого елементу на жовтий в другому блоку ul */
 /* Використовуйте Селектор першої дитини :first-child. */
 .third-task ul:last-child li:first-child {
-    color: yellow;
+    background: yellow;
 }
 
 /* Завдання №4:  Змінити фон останнього елементу списку на жовтий. */
@@ -110,7 +110,7 @@ button + span {
 
 /* Завдання №8:  Застосуйте червоний фон до останнього абзацу в div з классом eight-task */
 /* Використовуйте Селектор останнього типу :last-of-type */
-.eight-task span:first-of-type {
+.eight-task p:last-of-type {
     background: red;
 }
 
@@ -144,14 +144,14 @@ a[href] {
 
 /* Завдання №4. Застосуйте селектор наявності значення атрибута,
     щоб встановити синій фон для кнопки з класом "primary" */
-button[class^="primary"] {
+.lesson-three-task-four button[class~="primary"] {
     background: blue;
 }
 
 /* Завдання №5. Надайте червоний фон всім кнопка назви класу яких починаються зі слова secondary */
 /* Використовуйте селектор префіксу значення атрибута */
 button[class|="secondary"] {
-    background: blue;
+    background: red;
 }
 
 /* Завдання №6.  Застосуйте cелектор початку значення атрибута, щоб стилізувати тільки ті елементи списку,
@@ -184,7 +184,7 @@ button[class|="secondary"] {
 /* Завдання №10. Задайте першому рядку жовтий фон. */
 /* Використовуйте селектор псевдоелементу першого рядка */
 .lesson-three-task-ten::first-line {
-    color: yellow;
+    background: yellow;
 }
 
 /* Завдання №11. Задайте червоний фон плейсхолдера для інпут-поля. */
